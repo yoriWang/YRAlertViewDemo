@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YRAlertView.h"
 
+#define TestImageArray @[@"rental_res_img", @"product_res_img", @"other_res_img", @"job_res_img"]
 #define TestItemArray @[@"item1", @"item2", @"item3", @"item4"]
 
 @interface ViewController ()
@@ -53,7 +54,7 @@
     /*
      set item image and title. image is optional, title is required
      */
-    [alertView showAlertMenuWithImageArray:nil titleArray:TestItemArray];
+    [alertView showAlertMenuWithImageArray:TestImageArray titleArray:TestItemArray];
     /*
      itemTitleColor: this property can set item title color. default is black color
      */
